@@ -16,7 +16,7 @@ html{
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #e8e8ee;
 }
 ::-webkit-scrollbar-thumb {
     background: #888;
@@ -63,7 +63,7 @@ section .title::before{
     left: 50%;
     width: 180px;
     height: 3px;
-    background: #111;
+    background: #3e3e95;
     transform: translateX(-50%);
 }
 section .title::after{
@@ -96,7 +96,7 @@ section .title::after{
     justify-content: space-between;
 }
 .navbar .logo a{
-    color: #fff;
+    color: #64FFDA;
     font-size: 35px;
     font-weight: 600;
 }
@@ -120,7 +120,7 @@ section .title::after{
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: crimson;
+    color: #64FFDA;
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
@@ -132,6 +132,9 @@ section .title::after{
     font-size: 23px;
     cursor: pointer;
     display: none;
+}
+.menu-btn1{
+    color: #64FFDA;
 }
 .scroll-up-btn{
     position: fixed;
@@ -165,7 +168,8 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/gif2.gif") no-repeat center;
+    /* background: url("images/gif2.gif") no-repeat center; */
+    background: #0a192f;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -182,40 +186,49 @@ section .title::after{
 }
 .home .home-content .text-1{
     font-size: 27px;
+    color: #64FFDA;
 }
 .home .home-content .text-2{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
+    color: #CCD6F6;
 }
 .home .home-content .text-3{
-    font-size: 40px;
+    font-size: 20px;
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: crimson;
-    font-weight: 500;
+    color: #64FFDA;
+    font-weight: 200;
 }
 .home .home-content a{
     display: inline-block;
-    background: crimson;
-    color: #fff;
-    font-size: 25px;
+    color: #CCD6F6;
+    font-size: 18px;
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid #64FFDA;
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color: crimson;
-    background: none;
+    color: #64FFDA;
+    background: #032251;
 }
 
 /* about section styling */
+.about{
+    background: #0a192f;
+}
+.about .title{
+    color: #CCD6F6;
+}
 .about .title::after{
     content: "who i am";
+    color: #64FFDA;
+    background: #0a192f;
 }
 .about .about-content .left{
     width: 45%;
@@ -225,17 +238,19 @@ section .title::after{
     width: 400px;
     object-fit: cover;
     border-radius: 6px;
+    border: 3px solid #64FFDA;
 }
 .about .about-content .right{
     width: 55%;
 }
 .about .about-content .right .text{
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 500;
     margin-bottom: 10px;
+    color: #CCD6F6;
 }
 .about .about-content .right .text span{
-    color: crimson;
+    color: #CCD6F6;
 }
 .about .about-content .right p{
     text-align: justify;
@@ -249,7 +264,7 @@ section .title::after{
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid #64FFDA;
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
@@ -260,7 +275,7 @@ section .title::after{
 /* services section styling */
 .services, .teams{
     color:#fff;
-    background: #111;
+    background: #0a192f;
 }
 .services .title::before,
 .teams .title::before{
@@ -268,20 +283,23 @@ section .title::after{
 }
 .services .title::after,
 .teams .title::after{
-    background: #111;
     content: "what i provide";
+    color: #64FFDA;
+    background: #0a192f;
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
-    background: #222;
+    background: #0a192f;
     text-align: center;
     border-radius: 6px;
+    border: 3px solid #64FFDA;
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
-    background: crimson;
+    color: #64FFDA;
+    background: #032251;
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
@@ -291,11 +309,11 @@ section .title::after{
 }
 .services .serv-content .card i{
     font-size: 50px;
-    color: crimson;
+    /* color: crimson; */
     transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i{
-    color: #fff;
+    color: #64FFDA;
 }
 .services .serv-content .card .text{
     font-size: 25px;
@@ -304,9 +322,14 @@ section .title::after{
 }
 
 /* skills section styling */
-
+.skills{
+    background: #0a192f;
+    color: #CCD6F6;
+}
 .skills .title::after{
     content: "what i know";
+    color: #64FFDA;
+    background: #0a192f;
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -315,24 +338,26 @@ section .title::after{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
+    color: #CCD6F6;
 }
 .skills .skills-content .left p{
     text-align: justify;
+    color: #CCD6F6;
 }
 .skills .skills-content .left a{
     display: inline-block;
-    background: crimson;
+    background: #0a192f;;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid #64FFDA;
     transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover{
-    color: crimson;
+    color: #64FFDA;
     background: none;
 }
 .skills .skills-content .right .bars{
@@ -351,7 +376,7 @@ section .title::after{
 .skills .skills-content .right .line{
     height: 5px;
     width: 100%;
-    background: lightgrey;
+    background: #385e97;
     position: relative;
 }
 .skills .skills-content .right .line::before{
@@ -360,7 +385,7 @@ section .title::after{
     height: 100%;
     left: 0;
     top: 0;
-    background: crimson;
+    background: #64FFDA;
 }
 .skills-content .right .html::before{
     width: 90%;
@@ -379,8 +404,13 @@ section .title::after{
 }
 
 /* teams section styling */
+.teams{
+    background: #0a192f;
+}
 .teams .title::after{
     content: "who with me";
+    color: #64FFDA;
+    background: #0a192f;
 }
 .teams .carousel .card{
     background: #222;
@@ -443,8 +473,14 @@ section .title::after{
 }
 
 /* contact section styling */
+.contact{
+    background: #0a192f;
+}
+
 .contact .title::after{
     content: "get in touch";
+    color: #64FFDA;
+    background: #0a192f;
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -453,9 +489,11 @@ section .title::after{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
+    color: #64FFDA;
 }
 .contact .contact-content .left p{
     text-align: justify;
+    color: #CCD6F6;
 }
 .contact .contact-content .left .icons{
     margin: 10px 0;
@@ -474,9 +512,10 @@ section .title::after{
 }
 .contact .contact-content .info .head{
     font-weight: 500;
+    color: #64FFDA;
 }
 .contact .contact-content .info .sub-title{
-    color: #333;
+    color: #CCD6F6;
 }
 .contact .right form .fields{
     display: flex;
@@ -498,7 +537,7 @@ section .title::after{
 .contact .right form .textarea textarea{
     height: 100%;
     width: 100%;
-    border: 1px solid lightgrey;
+    border: 1px solid #64FFDA;
     border-radius: 6px;
     outline: none;
     padding: 0 15px;
@@ -529,19 +568,19 @@ section .title::after{
   border-radius: 6px;
   cursor: pointer;
   flex-wrap: nowrap;
-  background: crimson;
-  border: 2px solid crimson;
+  background: #0a192f;
+  border: 2px solid #64FFDA;
   transition: all 0.3s ease;
 }
 .right form .button-area button:hover{
-  color: crimson;
+  color: #64FFDA;
   background: none;
 }
 /* footer section styling */
 footer{
-    background: #111;
+    background: #0a192f;
     padding: 15px 23px;
-    color: #fff;
+    color: #64FFDA;
     text-align: center;
 }
 footer span a{
@@ -600,7 +639,7 @@ footer span a:hover{
         font-size: 70px;
     }
     .home .home-content .text-3{
-        font-size: 35px;
+        font-size: 15px;
     }
     .home .home-content a{
         font-size: 23px;
@@ -639,7 +678,7 @@ footer span a:hover{
         font-size: 60px;
     }
     .home .home-content .text-3{
-        font-size: 32px;
+        font-size: 10px;
     }
     .home .home-content a{
         font-size: 20px;
@@ -654,7 +693,7 @@ footer span a:hover{
         font-size: 50px;
     }
     .home .home-content .text-3{
-        font-size: 27px;
+        font-size: 15px;
     }
     .about .about-content .right .text,
     .skills .skills-content .left .text{
@@ -682,4 +721,6 @@ footer span a:hover{
 
 .body-font .title::after{
     content: "what i achieve";
+    color: #64FFDA;
+    background: #0a192f;
 }
